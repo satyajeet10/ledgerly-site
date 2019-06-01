@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ledgerly — Expense tracking for small teams</title>
+    <meta name="description" content="A fictional product landing page built to practise semantic HTML and modern CSS." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Primary">
+        <a href="/" class="logo">Ledgerly</a>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Expenses your team actually files.</h1>
+        <p>Snap a receipt, pick a category, done. Approvals and exports happen on their own.</p>
+        <a class="button" href="#pricing">See pricing</a>
+      </section>
+
+      <section id="features" aria-labelledby="features-title">
+        <h2 id="features-title">Features</h2>
+        <ul class="cards" role="list">
+          <li class="card">
+            <h3>Receipts in seconds</h3>
+            <p>Photograph a receipt and Ledgerly reads the merchant, date, and amount. Nobody types totals again.</p>
+          </li>
+          <li class="card">
+            <h3>Approvals that move</h3>
+            <p>Managers approve from email or chat. Anything over policy is flagged before it reaches finance.</p>
+          </li>
+          <li class="card">
+            <h3>Month-end in one click</h3>
+            <p>Export categorized, approved expenses to your accounting tool or a clean CSV.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="pricing" aria-labelledby="pricing-title">
+        <h2 id="pricing-title">Pricing</h2>
+        <fieldset class="billing">
+          <legend class="visually-hidden">Billing period</legend>
+          <input type="radio" name="billing" id="monthly" value="monthly" checked />
+          <label for="monthly">Monthly</label>
+          <input type="radio" name="billing" id="annual" value="annual" />
+          <label for="annual">Annual <span class="save">save 20%</span></label>
+        </fieldset>
+        <ul class="plans" role="list">
+          <li class="plan">
+            <h3>Starter</h3>
+            <p class="price"><span class="monthly">₹0</span><span class="annual">₹0</span> <small>per user / month</small></p>
+            <ul role="list"><li>Up to 5 users</li><li>Receipt capture</li><li>CSV export</li></ul>
+            <a class="button secondary" href="#">Start free</a>
+          </li>
+          <li class="plan featured" aria-label="Team plan, most popular">
+            <p class="badge">Most popular</p>
+            <h3>Team</h3>
+            <p class="price"><span class="monthly">₹249</span><span class="annual">₹199</span> <small>per user / month</small></p>
+            <ul role="list"><li>Unlimited users</li><li>Approval workflows</li><li>Policy checks</li></ul>
+            <a class="button" href="#">Start 14-day trial</a>
+          </li>
+          <li class="plan">
+            <h3>Business</h3>
+            <p class="price"><span class="monthly">₹449</span><span class="annual">₹359</span> <small>per user / month</small></p>
+            <ul role="list"><li>Everything in Team</li><li>Accounting integrations</li><li>SSO and audit log</li></ul>
+            <a class="button secondary" href="#">Talk to sales</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Can I import expenses from another tool?</summary>
+            <p>Yes. Upload a CSV from any expense tool and map the columns once; Ledgerly remembers the mapping.</p>
+          </details>
+          <details>
+            <summary>Where is my data stored?</summary>
+            <p>In data centres in India, encrypted at rest and in transit.</p>
+          </details>
+          <details>
+            <summary>Can I change plans later?</summary>
+            <p>Any time. Upgrades apply immediately; downgrades take effect at the next billing date.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Ledgerly is a fictional product.</p>
+    </footer>
+  </body>
+</html>
